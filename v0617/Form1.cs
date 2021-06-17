@@ -52,6 +52,44 @@ namespace v0617
             {
                 vy = -Math.Abs(vy);
             }
+            label4.Left += vx;
+            label4.Top += vy;
+
+            if (label4.Left < 0)
+            {
+                vx = Math.Abs(vx);
+            }
+            if (label4.Top < 0)
+            {
+                vy = Math.Abs(vy);
+            }
+            if (label4.Right > ClientSize.Width)
+            {
+                vx = -Math.Abs(vx);
+            }
+            if (label4.Bottom > ClientSize.Height)
+            {
+                vy = -Math.Abs(vy);
+            }
+            label5.Left += vx;
+            label5.Top += vy;
+
+            if (label5.Left < 0)
+            {
+                vx = Math.Abs(vx);
+            }
+            if (label5.Top < 0)
+            {
+                vy = Math.Abs(vy);
+            }
+            if (label5.Right > ClientSize.Width)
+            {
+                vx = -Math.Abs(vx);
+            }
+            if (label5.Bottom > ClientSize.Height)
+            {
+                vy = -Math.Abs(vy);
+            }
 
             score--;
             label2.Text = $"score{score}";
@@ -77,6 +115,11 @@ namespace v0617
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
