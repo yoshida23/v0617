@@ -26,7 +26,14 @@ namespace v0617
 
         private void label1_Click(object sender, EventArgs e)
         {
-            if()
+            if(label1.Left=0)
+            {
+                vx = 10;
+            }
+            if(label1.Top=0)
+            {
+                vy = 10;
+            }
         }
     }
 }
